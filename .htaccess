@@ -1,0 +1,11 @@
+RewriteEngine on
+<<<<<<< HEAD
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+RewriteRule ^(.*)$ /public/$1 [L]
+=======
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule^(.*)$public/$1[L]
+</IfModule>
+>>>>>>> 4ecaf5941d0e3bd6d159aef3a62ff8da3ff82912
